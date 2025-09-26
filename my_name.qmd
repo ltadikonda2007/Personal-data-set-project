@@ -1,0 +1,63 @@
+---
+title: "Homework 3 Problem 3"
+author: "Leo Tadikonda"
+format: pdf
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Data Types
+
+R supports all of the main data types that we discussed in class during week 2. Strings in R are represented with quotation marks, before and after the object. Strings can contain letters, numbers, spaces, and punctuation. Change the my_name variable so that this code snippet prints your name.  
+
+```{r string}
+
+my_first_string <- "abc123"
+print(my_first_string)
+my_name = "Leo Tadikinda"
+print(my_name)
+```
+
+## Arithmetic
+We have already seen some examples of using R as a calculator to perform simple arithmetic but it can also do calculations with variables. Change the my_favorite_number variable to your favorite number. 
+
+```{r number}
+
+my_favorite_number <- 95 #your favorite number goes here!
+
+a_new_number = my_favorite_number * 3 - 4
+print(a_new_number)
+
+a_new_number = (a_new_number ** 2)
+a_new_number = a_new_number ** 2
+
+cat("Is ", a_new_number, " a better number?")
+
+```
+
+
+
+## Conditional Expressions
+
+R has built-in operators to evaluate comparisons between numbers and strings. Modify the following expressions so that they are true instead of false. 
+
+
+```{r if}
+print(3 > 2)
+print(-6 > 5 + 7)
+print(3 == 3)
+print(12 == 12)
+```
+
+
+## Plotting 
+
+One nice feature of the Markdown format is that it allows us to include R calculations and figures directly into our reports and presentations. The following code creates a short vector and then makes a plot of the values inside the vector. Change the values so that the dots decrease from left to right.  
+```{r plot1}
+
+my_first_vector <- c(15,12,5,2,1)
+plot(my_first_vector)
+```
+
